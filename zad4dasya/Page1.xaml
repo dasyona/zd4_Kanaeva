@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zad4dasya.Page1"
+             Title="Кредитный калькулятор">
+    <StackLayout Padding="20">
+
+        <Label Text="Сумма кредита: " FontSize="Medium"></Label>
+        <Entry x:Name="CreditSum" Keyboard="Numeric" TextChanged="OnDataChanged"></Entry>
+
+        <Label Text="Срок (месяцев): " FontSize="Medium"></Label>
+        <Entry x:Name="TimeCredit" Keyboard="Numeric" TextChanged="OnDataChanged"></Entry>
+
+        <Label Text="Вид платежа: " FontSize="Medium"></Label>
+        <Picker x:Name="TypePicker" SelectedIndex="0" SelectedIndexChanged="OnDataChanged">
+            <Picker.Items>
+                <x:String>Аннуитетный</x:String>
+                <x:String>Дифференцированный</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Процентная ставка" FontSize="Medium"></Label>
+        <Slider x:Name="RateSlider" Minimum="0" Maximum="100" Value="50" ValueChanged="OnDataChanged"/>
+
+        <Label Text="Ежемесячный платёж:" FontSize="Medium"></Label>
+        <Label x:Name="Payment" FontSize="Medium"></Label>
+
+        <Label Text="Общая сумма:" FontSize="Medium"></Label>
+        <Label x:Name="Sum" FontSize="Medium"></Label>
+
+        <Label Text="Переплата:" FontSize="Medium"></Label>
+        <Label x:Name="Overpayment" FontSize="Medium"></Label>
+
+    </StackLayout>
+</ContentPage>

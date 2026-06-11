@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zad4dasya.Page2"
+             Title="Курсы валют">
+    <StackLayout Padding="20">
+        <Label Text="Центробанк РФ:" FontSize="Medium"></Label>
+        <Label x:Name="USD" Text="USD"></Label>
+        <Label x:Name="EUR" Text="EUR"></Label>
+        <Label Text="Текущая дата:"></Label>
+        <DatePicker x:Name="myDatePicker" FontSize="Medium" DateSelected="OnDateSelected"></DatePicker>
+    </StackLayout>
+</ContentPage>

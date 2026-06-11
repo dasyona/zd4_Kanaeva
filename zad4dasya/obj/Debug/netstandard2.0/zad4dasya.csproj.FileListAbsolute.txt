@@ -1,0 +1,17 @@
+C:\pr21\zad4dasya\zad4dasya\bin\Debug\netstandard2.0\zad4dasya.deps.json
+C:\pr21\zad4dasya\zad4dasya\bin\Debug\netstandard2.0\zad4dasya.dll
+C:\pr21\zad4dasya\zad4dasya\bin\Debug\netstandard2.0\ref\zad4dasya.dll
+C:\pr21\zad4dasya\zad4dasya\bin\Debug\netstandard2.0\zad4dasya.pdb
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.csproj.AssemblyReference.cache
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.GeneratedMSBuildEditorConfig.editorconfig
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\Page1.xaml.g.cs
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\Page2.xaml.g.cs
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.AssemblyInfoInputs.cache
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.AssemblyInfo.cs
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.csproj.CoreCompileInputs.cache
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\XamlC.stamp
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.dll
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\refint\zad4dasya.dll
+C:\pr21\zad4dasya\zad4dasya\obj\Debug\netstandard2.0\zad4dasya.pdb
