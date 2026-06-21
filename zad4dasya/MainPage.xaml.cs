@@ -11,9 +11,13 @@ namespace zad4dasya
 {
     public partial class MainPage : TabbedPage
     {
-        public MainPage()
+        public MainPage(string username = null)
         {
             InitializeComponent();
+            if (!string.IsNullOrEmpty(username))
+            {
+                Title = $"Welcome, {username}";
+            }
         }
     }
 }

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zad4dasya.WelcomePage"
+             Title="Welcome"
+             StyleClass="welcomePage">
+
+    <Frame BackgroundColor="#2D2D2D"
+           CornerRadius="10"
+           Padding="20"
+           Margin="30"
+           VerticalOptions="Center"
+           HasShadow="True">
+
+        <StackLayout Spacing="15">
+
+            <Label Text="Welcome"
+                   FontSize="Title"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   StyleClass="welcomeTitle"/>
+
+            <Label Text="Username"
+                   FontSize="Small"
+                   TextColor="#AAAAAA"
+                   StyleClass="fieldLabel"/>
+
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="Username"
+                   PlaceholderColor="#888888"
+                   TextColor="White"
+                   BackgroundColor="#3C3C3C"
+                   StyleClass="loginEntry"/>
+
+            <Label Text="Password"
+                   FontSize="Small"
+                   TextColor="#AAAAAA"
+                   StyleClass="fieldLabel"/>
+
+            <Entry x:Name="PasswordEntry"
+                   Placeholder="Password"
+                   PlaceholderColor="#888888"
+                   IsPassword="True"
+                   TextColor="White"
+                   BackgroundColor="#3C3C3C"
+                   StyleClass="loginEntry"/>
+
+            <Label x:Name="ErrorLabel"
+                   Text=""
+                   TextColor="#FF4444"
+                   FontSize="Small"
+                   IsVisible="False"
+                   StyleClass="errorLabel"/>
+
+            <Button x:Name="SignInButton"
+                    Text="Sign in"
+                    BackgroundColor="#E74C3C"
+                    TextColor="White"
+                    FontSize="Medium"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnSignInClicked"
+                    StyleClass="signInButton"/>
+
+            <Grid ColumnDefinitions="*, *">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Orientation="Horizontal" VerticalOptions="Center">
+                    <CheckBox x:Name="RememberMeCheckBox"
+                              Color="#E74C3C"
+                              VerticalOptions="Center"/>
+                    <Label Text="Remember me"
+                           TextColor="#AAAAAA"
+                           FontSize="Small"
+                           VerticalOptions="Center"
+                           Margin="5,0,0,0"/>
+                </StackLayout>
+
+                <Label Grid.Column="1"
+                       Text="I forgot?"
+                       TextColor="#E74C3C"
+                       FontSize="Small"
+                       HorizontalTextAlignment="End"
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnForgotTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+
+        </StackLayout>
+    </Frame>
+
+</ContentPage>
