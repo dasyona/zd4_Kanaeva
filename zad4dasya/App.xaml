@@ -3,6 +3,74 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="zad4dasya.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#1E1E1E"/>
+                <Setter Property="BarTextColor" Value="White"/>
+            </Style>
 
+            <!-- Welcome Page Styles -->
+            <Style Class="welcomePage" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="#1E1E1E"/>
+            </Style>
+
+            <Style Class="welcomeTitle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style Class="fieldLabel" TargetType="Label">
+                <Setter Property="Margin" Value="0,5,0,0"/>
+            </Style>
+
+            <Style Class="loginEntry" TargetType="Entry">
+                <Setter Property="Margin" Value="0,0,0,5"/>
+            </Style>
+
+            <Style Class="errorLabel" TargetType="Label">
+                <Setter Property="Margin" Value="0,5,0,0"/>
+            </Style>
+
+            <Style Class="signInButton" TargetType="Button">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+            </Style>
+
+            <!-- Page3 Variant 2 Styles -->
+            <Style Class="page3" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="#F5F5F5"/>
+            </Style>
+
+            <Style Class="sectionLabel" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0,0,0,5"/>
+            </Style>
+
+            <Style Class="variantPicker" TargetType="Picker">
+                <Setter Property="BackgroundColor" Value="#2196F3"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HeightRequest" Value="50"/>
+            </Style>
+
+            <Style Class="variantSlider" TargetType="Slider">
+                <Setter Property="HeightRequest" Value="50"/>
+            </Style>
+
+            <Style Class="sliderLabel" TargetType="Label">
+                <Setter Property="Margin" Value="0,-10,0,0"/>
+            </Style>
+
+            <Style Class="variantButton" TargetType="Button">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style Class="resultFrame" TargetType="Frame">
+                <Setter Property="BorderColor" Value="#2196F3"/>
+            </Style>
+
+            <!-- TabbedPage Styles -->
+            <Style TargetType="TabbedPage">
+                <Setter Property="BackgroundColor" Value="#FFFFFF"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

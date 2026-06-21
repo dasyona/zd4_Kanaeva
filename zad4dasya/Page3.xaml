@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zad4dasya.Page3"
+             Title="Элементы управления"
+             StyleClass="page3">
+
+    <StackLayout Padding="20" Spacing="15">
+
+        <Label Text="Выберите значение из списка:"
+               FontSize="Medium"
+               TextColor="#333333"
+               StyleClass="sectionLabel"/>
+
+        <Picker x:Name="SelectPicker"
+                Title="Select One"
+                StyleClass="variantPicker">
+            <Picker.Items>
+                <x:String>Select One</x:String>
+                <x:String>Select Two</x:String>
+                <x:String>Select Three</x:String>
+                <x:String>Select Four</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Настройте слайдер:"
+               FontSize="Medium"
+               TextColor="#333333"
+               StyleClass="sectionLabel"/>
+
+        <Slider x:Name="ValueSlider"
+                Minimum="0"
+                Maximum="100"
+                Value="50"
+                MinimumTrackColor="#2196F3"
+                MaximumTrackColor="#CCCCCC"
+                ThumbColor="#2196F3"
+                StyleClass="variantSlider"/>
+
+        <Label x:Name="SliderValueLabel"
+               Text="Текущее значение: 50"
+               FontSize="Small"
+               TextColor="#666666"
+               StyleClass="sliderLabel"/>
+
+        <Label x:Name="SliderMaxLabel"
+               Text="Максимальное значение: 100"
+               FontSize="Small"
+               TextColor="#666666"
+               StyleClass="sliderLabel"/>
+
+        <Button x:Name="StaticButton"
+                Text="Static"
+                BackgroundColor="#2196F3"
+                TextColor="White"
+                FontSize="Medium"
+                CornerRadius="20"
+                HeightRequest="50"
+                Clicked="OnStaticClicked"
+                StyleClass="variantButton"/>
+
+        <Frame x:Name="ResultFrame"
+               IsVisible="False"
+               BackgroundColor="#E3F2FD"
+               CornerRadius="10"
+               Padding="15"
+               Margin="0,10,0,0"
+               StyleClass="resultFrame">
+
+            <StackLayout Spacing="5">
+                <Label Text="Результат:"
+                       FontSize="Medium"
+                       TextColor="#1565C0"
+                       FontAttributes="Bold"/>
+                <Label x:Name="ResultLabel"
+                       Text=""
+                       FontSize="Small"
+                       TextColor="#333333"/>
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
